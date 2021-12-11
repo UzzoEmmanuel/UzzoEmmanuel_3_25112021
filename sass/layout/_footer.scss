@@ -1,0 +1,29 @@
+.footer {
+    background-color: $color-footer;
+    width: 100%;
+    padding: 2.5rem 0 2.38rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        color: $color-white;
+        width: 20rem;
+        padding: 0 0 1.75rem 1.56rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__list {
+        width: 20rem;
+        padding-left: 1.56rem;
+        display: flex;
+        flex-direction: column;
+    }
+    &__link {
+        color: $color-white;
+        margin-bottom: 0.94rem;
+        &--icon {
+            padding-right: 0.75rem;
+        }
+    }
+}

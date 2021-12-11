@@ -1,0 +1,33 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'shrikhand', 'cursive';
+}
+
+h2 {
+    @include bold;
+}
+
+h3 {
+    @include light;
+}
+
+a {
+    color: $color-black;
+}
+
+input {
+    @include bold;
+}
+
+.footer__title--typo {
+    font-family: 'shrikhand', 'cursive';
+    font-size: 1.25rem;
+}
+
+.footer__link--typo {
+    @include bold;
+}
