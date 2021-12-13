@@ -58,6 +58,9 @@ input {
   border: none;
   color: #ffffff;
   background: linear-gradient(to bottom right, #eb72da, #a25bdc);
+  transform: scale(1);
+  transition: transform 450ms, background-color 300ms;
+  transition-delay: 0, 150ms;
 }
 
 .btn-submit {
@@ -66,6 +69,9 @@ input {
   border: none;
   color: #ffffff;
   background: linear-gradient(to bottom right, #eb72da, #a25bdc);
+  transform: scale(1);
+  transition: transform 450ms, background-color 300ms;
+  transition-delay: 0, 150ms;
 }
 
 .header {
@@ -102,6 +108,9 @@ input {
   padding: 0 10px;
   background-color: #eaeaea;
 }
+.header__location--input:focus {
+  outline: none;
+}
 .header__informations {
   width: 100%;
   height: 8.75rem;
@@ -124,10 +133,14 @@ input {
   border: none;
   color: #ffffff;
   background: linear-gradient(to bottom right, #eb72da, #a25bdc);
+  transform: scale(1);
+  transition: transform 450ms, background-color 300ms;
+  transition-delay: 0, 150ms;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 20px;
 }
 .header__nav--button:hover {
   background: linear-gradient(to bottom right, #99e2d0, #008766);
+  transform: scale(1.1);
 }
 
 .header-menu {
@@ -181,10 +194,21 @@ input {
 }
 .restaurant__title--icon {
   font-size: 1.5rem;
-  padding-left: 1rem;
+  margin-left: 1rem;
+  position: relative;
 }
-.restaurant__title--icon:hover {
-  color: #9356dc;
+.restaurant__title .icon--inactive {
+  position: absolute;
+  z-index: 0;
+}
+.restaurant__title .icon--active {
+  color: #eb72da;
+  z-index: 1;
+  transform: scale(0);
+  transition: transform 330ms ease-in-out;
+}
+.restaurant__title--icon:hover .icon--active {
+  transform: scale(1.1);
 }
 
 .dish {
@@ -271,6 +295,7 @@ input {
 .dish__card:hover .dish__card--icon {
   background-color: #ffffff;
   color: #99e2d0;
+  font-size: 0.63rem;
   border-radius: 50px;
   padding: 2.5px 5px;
 }
@@ -289,11 +314,15 @@ input {
   border: none;
   color: #ffffff;
   background: linear-gradient(to bottom right, #eb72da, #a25bdc);
+  transform: scale(1);
+  transition: transform 450ms, background-color 300ms;
+  transition-delay: 0, 150ms;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 20px;
   font-weight: bolder;
 }
 .submit--button:hover {
   background: linear-gradient(to bottom right, #99e2d0, #008766);
+  transform: scale(1.1);
 }
 
 .footer {
@@ -441,9 +470,20 @@ input {
 .restaurants__card--informations-icon {
   font-size: 1.31rem;
   padding: 0 1.56rem 1rem 0;
+  position: relative;
 }
-.restaurants__card--informations-icon:hover {
-  color: #9356dc;
+.restaurants__card--informations .icon--inactive {
+  position: absolute;
+  z-index: 0;
+}
+.restaurants__card--informations .icon--active {
+  color: #eb72da;
+  z-index: 1;
+  transform: scale(0);
+  transition: transform 330ms ease-in-out;
+}
+.restaurants__card--informations-icon:hover .icon--active {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */

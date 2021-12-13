@@ -52,9 +52,22 @@
             &-icon {
                 font-size: 1.31rem;
                 padding: 0 1.56rem 1rem 0;
+                position: relative;
+            }
+            .icon--inactive {
+                position: absolute;
+                z-index: 0;
+            }
+            .icon--active {
+                color: $color-btn;
+                z-index: 1;
+                transform: scale(0);
+                transition: transform 330ms ease-in-out;
             }
             &-icon:hover {
-                color: $color-primary;
+                .icon--active {
+                transform: scale(1.1);
+                }
             }
         }
     }

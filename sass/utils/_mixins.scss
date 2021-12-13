@@ -4,10 +4,14 @@
     border: none;
     color: $color-white;
     background: linear-gradient(to bottom right, $color-btn, $color-btn-dark);
+    transform: scale(1);
+    transition: transform 450ms, background-color 300ms;
+    transition-delay: 0, 150ms;
 }
 
 @mixin btn-search--hover {
     background: linear-gradient(to bottom right, $color-tertiary, $color-tertiary-dark);
+    transform: scale(1.1);
 }
 
 @mixin btn-submit {
@@ -16,10 +20,14 @@
     border: none;
     color: $color-white;
     background: linear-gradient(to bottom right, $color-btn, $color-btn-dark);
+    transform: scale(1);
+    transition: transform 450ms, background-color 300ms;
+    transition-delay: 0, 150ms;
 }
 
 @mixin btn-submit--hover {
     background: linear-gradient(to bottom right, $color-tertiary, $color-tertiary-dark);
+    transform: scale(1.1);
 }
 
 @mixin box-shadow {
@@ -86,6 +94,7 @@
 @mixin icon-active {
     background-color: $color-white;
     color: $color-tertiary;
+    font-size: 0.63rem;
     border-radius: 50px;
     padding: 2.5px 5px;
 }

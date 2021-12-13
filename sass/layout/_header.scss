@@ -30,6 +30,9 @@
             padding: 0 10px;
             background-color: $color-background-dark;
         }
+        &--input:focus {
+            outline: none;
+        }
 
     }
     &__informations {

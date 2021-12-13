@@ -26,10 +26,23 @@
         }
         &--icon {
             font-size: 1.5rem;
-            padding-left: 1rem;
+            margin-left: 1rem;
+            position: relative;
+        }
+        .icon--inactive {
+            position: absolute;
+            z-index: 0;
+        }
+        .icon--active {
+            color: $color-btn;
+            z-index: 1;
+            transform: scale(0);
+            transition: transform 330ms ease-in-out;
         }
         &--icon:hover {
-            color: $color-primary;
+            .icon--active {
+                transform: scale(1.1);
+            }
         }
     }
 }
@@ -97,10 +110,7 @@
             margin-left: 1.44rem;
         }
         .dish__card--icon {
-            background-color: $color-white;
-            color: $color-tertiary;
-            border-radius: 50px;
-            padding: 2.5px 5px;
+            @include icon-active;
         }
     }
 }
