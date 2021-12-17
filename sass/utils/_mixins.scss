@@ -1,29 +1,10 @@
-@mixin btn-search {
-    padding: 15px 25px;
-    border-radius: 50px;
-    border: none;
-    color: $color-white;
-    background: linear-gradient(to bottom right, $color-btn, $color-btn-dark);
-}
-
-@mixin btn-search--hover {
-    background: linear-gradient(to bottom right, lighten($color-btn, 5), lighten($color-btn-dark, 5));
-}
-
-@mixin btn-submit {
-    padding: 18px 49px;
-    border-radius: 50px;
-    border: none;
-    color: $color-white;
-    background: linear-gradient(to bottom right, $color-btn, $color-btn-dark);
-}
-
-@mixin btn-submit--hover {
-    background: linear-gradient(to bottom right, lighten($color-btn, 5), lighten($color-btn-dark, 5));
-}
-
+/* GENERAL */
 @mixin box-shadow {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 20px;
+}
+
+@mixin box-shadow--hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px;
 }
 
 @mixin light {
@@ -34,6 +15,36 @@
     font-weight: bolder;
 }
 
+/* BUTTONS */
+@mixin btn-search {
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: none;
+    color: $color-white;
+    background: linear-gradient(to bottom right, $color-btn, $color-btn-dark);
+    @include box-shadow;
+}
+
+@mixin btn-search--hover {
+    background: linear-gradient(to bottom right, lighten($color-btn, 5), lighten($color-btn-dark, 5));
+    @include box-shadow--hover;
+}
+
+@mixin btn-submit {
+    padding: 18px 49px;
+    border-radius: 50px;
+    border: none;
+    color: $color-white;
+    background: linear-gradient(to bottom right, $color-btn, $color-btn-dark);
+    @include box-shadow;
+}
+
+@mixin btn-submit--hover {
+    background: linear-gradient(to bottom right, lighten($color-btn, 5), lighten($color-btn-dark, 5));
+    @include box-shadow--hover;
+}
+
+/* HOME-PAGE */
 @mixin restaurant-homepage-card {
     background-color: $color-white;
     border-radius: 20px;
@@ -42,20 +53,21 @@
     margin-bottom: 1.13rem;
 }
 
-@mixin restaurant-dish-card {
-    background-color: $color-white;
-    border-radius: 15px;
-    width: 100%;
-    max-width: 21.88rem;
-    height: 4.25rem;
-}
-
 @mixin sticker-new {
     padding: 0.56rem 0.75rem;
     border-radius: 5px;
     color: $color-tertiary-dark;
     background-color: $color-tertiary;
     @include bold;
+}
+
+/* RESTAURANT-PAGE */
+@mixin restaurant-dish-card {
+    background-color: $color-white;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 21.88rem;
+    height: 4.25rem;
 }
 
 @mixin dish-title {

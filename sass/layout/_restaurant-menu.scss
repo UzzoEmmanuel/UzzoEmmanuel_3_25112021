@@ -34,7 +34,7 @@
             z-index: 0;
         }
         .icon--active {
-            color: $color-btn;
+            color: $color-btn;           
             z-index: 1;
             transform: scale(0);
             transition: transform 330ms ease-in-out;
@@ -72,6 +72,7 @@
         flex-direction: row;
         justify-content: center;
         position: relative;
+        animation: dish-card-animation 800ms both;
         &--inactive {
             width: 100%;
             display: flex;
@@ -79,31 +80,34 @@
             justify-content: space-between;
         }
         &--infos {
+            width: 100%;
             padding: 0.94rem 0 0.81rem 0;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            p {
+                width: 255px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
         &--price {
             padding-top: 2.2rem;
             margin-left: 0.5rem;
             }
         &--active {
+            width: 0%;
             display: flex;
             align-items: center;
             justify-content: center;
-            transform-origin: right;
-            transform: scaleX(0);
-            transition: transform 600ms;
+            transform: translateX(50%);
+            transition: transform 600ms ease-in-out;
         }
         &--icon {
             @include icon-active;
-            position: absolute;
-            opacity: 0;
-            transform: rotate(-360deg);
+            visibility: hidden;
+            transform: rotate(-360deg) ;
             transition: transform 600ms ease-in-out;
         }
     }
@@ -115,16 +119,50 @@
         }
         .dish__card--active {
             @include card-active;
-            transform: scaleX(1);
+            width: 20%;
+            transform: translateX(0%);
         }
         .dish__card--price {
             margin-left: 1.44rem;
         }
         .dish__card--icon {
             @include icon-active;
-            opacity: 1;
-            transform: rotate(0deg);
+            visibility: visible;
+            transform: rotate(0deg) ;
         }
+        p {
+            width: 180px;
+        }
+    }
+    .card__1 {
+        animation-delay: 200ms;
+    }
+    .card__2 {
+        animation-delay: 400ms;
+    }
+    .card__3 {
+        animation-delay: 600ms;
+    }
+    .card__4 {
+        animation-delay: 800ms;
+    }
+    .card__5 {
+        animation-delay: 1000ms;
+    }
+    .card__6 {
+        animation-delay: 1200ms;
+    }
+    .card__7 {
+        animation-delay: 1400ms;
+    }
+    .card__8 {
+        animation-delay: 1600ms;
+    }
+    .card__9 {
+        animation-delay: 1800ms;
+    }
+    .card__10 {
+        animation-delay: 2000ms;
     }
 }
 
