@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <title>projet_3_la_palette_du_gout</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="stylesheet" href="public/css/style.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header class="header-menu">
+            <div class="header-menu__icon">
+                <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+            </div>
+            <div class="header-menu__title">
+                <h1>ohmyfood</h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="restaurant">
+                <div class="restaurant__img">
+                    <img src="/public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la_palette_du_gout">
+                </div>
+                <!--fontawesome V5 doesen't support linear-gradient style (here used for heart icon)... 
+                    possible issue for this problem here "https://stackoverflow.com/questions/47800574/gradient-over-instagram-svg-of-fontawesome-5/47801536"
+                    or downgrade to fontawesome V4.
+                -->
+                <div class="restaurant__title">
+                    <div class="restaurant__title--name">
+                        <h1>La palette du goût</h1>
+                        <div class="restaurant__title--icon">
+                            <div class="icon--inactive">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="icon--active">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="dish">
+                <!--STARTER><!-->
+                <div class="dish__title">
+                   <h4>entrées</h4>
+                </div>
+                <div class="dish__card card__1">
+                    <div class="dish__card--inactive">
+                        <div class="dish__card--infos">
+                            <p><strong>Fricassée d'escargots</strong></p>
+                            <p>Au piment d'espelette</p>
+                        </div>
+                        <div class="dish__card--price">
+                            <span><strong>25€</strong></span>
+                        </div>
+                    </div>
+                    <div class="dish__card--active">
+                        <div class="dish__card--icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>        
+                </div>
+                <div class="dish__card card__2">
+                    <div class="dish__card--inactive">
+                        <div class="dish__card--infos">
+                            <p><strong>Foie gras de canard mi-cuit</strong></p>
+                            <p>Et ses copeaux de truffe noire</p>
+                        </div>
+                        <div class="dish__card--price">
+                            <span><strong>35€</strong></span>
+                        </div>
+                    </div>
+                    <div class="dish__card--active">
+                        <div class="dish__card--icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>        
+                </div>
+                <div class="dish__card card__3">
+                    <div class="dish__card--inactive">
+                        <div class="dish__card--infos">
+                            <p><strong>Oeuf au plat</strong></p>
+                            <p>Assaisonné à la truffe sur lit de caviar</p>
+                        </div>
+                        <div class="dish__card--price">
+                            <span><strong>20€</strong></span>
+                        </div>
+                    </div>
+                    <div class="dish__card--active">
+                        <div class="dish__card--icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>        
+                </div>      
+                <!--DISH><!-->
+                <div class="dish__title">
+                   <h4>plats</h4>    
+                </div>
+                <div class="dish__card card__4">
+                    <div class="dish__card--inactive">
+                        <div class="dish__card--infos">
+                            <p><strong>Filet de boeuf aux herbes</strong></p>
+                            <p>Accompagné de sa ribambelle de légumes</p>
+                        </div>
+                        <div class="dish__card--price">
+                            <span><strong>40€</strong></span>
+                        </div>
+                    </div>
+                    <div class="dish__card--active">
+                        <div class="dish__card--icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>        
+                </div>
+                <div class="dish__card card__5">
+                    <div class="dish__card--inactive">
+                        <div class="dish__card--infos">
+                            <p><strong>Parmentier de queue de boeuf</strong></p>
+                            <p>À la truffe noire sur sa purée de panais</p>
+                        </div>
+                        <div class="dish__card--price">
+                            <span><strong>35€</strong></span>
+                        </div>
+                    </div>
+                    <div class="dish__card--active">
+                        <div class="dish__card--icon">
+                            <i class="fas fa-check"></i>
+                        </div>  
+                    </div>        
+                </div>
+                <div class="dish__card card__6">
+                    <div class="dish__card--inactive">
+                        <div class="dish__card--infos">
+                            <p><strong>Filet de turbot</strong></p>
+                            <p>Aux agrumes</p>
+                        </div>
+                        <div class="dish__card--price">
+                            <span><strong>44€</strong></span>
+                        </div>
+                    </div>
+                    <div class="dish__card--active">
+                        <div class="dish__card--icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>        
+                </div>    
+                <!--DESSERT><!-->
+                <div class="dish__title">
+                   <h4>désserts</h4>    
+                </div>
+                <div class="dish__card card__7">
+                    <div class="dish__card--inactive">
+                        <div class="dish__card--infos">
+                            <p><strong>Paris-Brest</strong></p>
+                            <p>Revisité</p>
+                        </div>
+                        <div class="dish__card--price"> 
+                            <span><strong>18€</strong></span>
+                        </div>
+                    </div>
+                    <div class="dish__card--active">
+                        <div class="dish__card--icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>        
+                </div>
+                <div class="dish__card card__8">
+                    <div class="dish__card--inactive">
+                        <div class="dish__card--infos">
+                            <p><strong>Macaron au chocolat d'exception </strong></p>
+                            <p>Et glace à la vanille de Madagascar</p>
+                        </div>
+                        <div class="dish__card--price">
+                            <span><strong>22€</strong></span>
+                        </div>
+                    </div>
+                    <div class="dish__card--active">
+                        <div class="dish__card--icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>        
+                </div>
+                <div class="dish__card card__9">
+                    <div class="dish__card--inactive">
+                        <div class="dish__card--infos">
+                            <p><strong>Mousse au chocolat</strong></p>
+                            <p>Au piment d'Espelette et à la truffe noire</p>
+                        </div>
+                        <div class="dish__card--price">
+                            <span><strong>23€</strong></span>
+                        </div>
+                    </div>
+                    <div class="dish__card--active">
+                        <div class="dish__card--icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>        
+                </div>
+            </section>        
+            <section class="submit">    
+                <button class="submit--button">Commander</button>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__title">
+                <p class="footer__title--typo">ohmyfood</p>
+            </div>
+            <div class="footer__list">
+                <a class="footer__link footer__link--typo" href="#"><span class="footer__link--icon"><i class="fas fa-utensils"></i></span>Proposer un restaurant</a>
+                <a class="footer__link footer__link--typo" href="#"><span class="footer__link--icon"><i class="fas fa-hands-helping"></i></span>Devenir partenaire</a>
+                <a class="footer__link footer__link--typo" href="#">Mentions légales</a>
+                <a class="footer__link footer__link--typo" href="mailto:ohmyfood@gmail.com">Contact</a>
+            </div>
+        </footer>
+    </body>
+
+</html>
