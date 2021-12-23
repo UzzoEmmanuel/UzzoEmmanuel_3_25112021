@@ -345,7 +345,6 @@ input {
   font-size: 0.63rem;
   border-radius: 50px;
   padding: 4px 5px;
-  visibility: hidden;
   transform: translateX(20px) rotate(-360deg);
   transition: transform 600ms ease-in-out;
 }
@@ -358,7 +357,6 @@ input {
   font-size: 0.63rem;
   border-radius: 50px;
   padding: 4px 5px;
-  visibility: visible;
   transform: translateX(0) rotate(0deg);
 }
 .dish__card:hover p {
