@@ -35,6 +35,10 @@ h2 {
   font-weight: bolder;
 }
 
+.title__font {
+  font-family: "shrikhand", "cursive";
+}
+
 h3 {
   font-weight: lighter;
 }
@@ -45,6 +49,8 @@ a {
 
 input {
   font-weight: bolder;
+  color: #353535;
+  font-size: 1rem;
 }
 
 .footer__title--typo {
@@ -157,8 +163,9 @@ input {
   background-color: #eaeaea;
 }
 .header__location--input {
+  width: 10rem;
   border: hidden;
-  padding: 0 10px;
+  padding: 3px 0 0 18px;
   background-color: #eaeaea;
 }
 .header__location--input:focus {

@@ -11,6 +11,10 @@ h2 {
     @include bold;
 }
 
+.title__font {
+    font-family: 'shrikhand', 'cursive';
+}
+
 h3 {
     @include light;
 }
@@ -21,6 +25,8 @@ a {
 
 input {
     @include bold;
+    color: $color-footer;
+    font-size: 1rem;
 }
 
 .footer__title--typo {
