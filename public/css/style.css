@@ -43,6 +43,11 @@ h3 {
   font-weight: lighter;
 }
 
+.menu__font {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
 a {
   color: #000000;
 }
